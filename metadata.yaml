@@ -1,0 +1,22 @@
+name: astrbot_plugin_rollback_context
+display_name: 剪道
+desc: 安全修剪 AstrBot 当前会话的本地上下文，支持 "/rlast" 回滚最后一个完整回合，以及 "/clast" 预览并清理最后一个脏尾巴。
+description: 安全修剪 AstrBot 当前会话的本地 conversation history。"/rlast" 用于回滚最后一个完整回合，"/clast" 用于预览并清理最后一个未完成、失败或中断的尾链；设计范围外默认拒绝自动处理，并引导用户去 AstrBot WebUI 手动管理。当前版本优先推荐私聊 / 单人会话使用。
+author: woefy
+version: v0.4.0
+repo: https://github.com/woefy/astrbot_plugin_rollback_context
+support_platforms:
+  - telegram
+  - discord
+  - lark
+  - wecom
+  - slack
+  - kook
+  - vocechat
+astrbot_version: ">=4.16,<5"
+keywords:
+  - rollback
+  - context
+  - conversation
+  - tool-call
+  - astrbot

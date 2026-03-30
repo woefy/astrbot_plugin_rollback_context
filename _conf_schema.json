@@ -1,0 +1,14 @@
+{
+  "preview_max_chars": {
+    "type": "int",
+    "description": "`/rlast` 与 `/clast` 的预览文本最大长度。过长时会自动截断。",
+    "hint": "建议保持在 60~120 之间，兼顾可读性与不刷屏。",
+    "default": 80
+  },
+  "strict_unknown_fallback": {
+    "type": "bool",
+    "description": "当最后一轮尾链不属于 completed_turn / dirty_turn 时，是否强制拒绝自动处理，并提示去 AstrBot WebUI 手动管理。",
+    "hint": "建议保持开启，宁可保守拒绝，也不要误删本地 conversation history。",
+    "default": true
+  }
+}
